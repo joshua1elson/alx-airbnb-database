@@ -1,4 +1,4 @@
-![ER Diagram](https://drive.google.com/uc?id=1GwK4gCAELum_tOW3OmQWBiRA7jP2CXAO)
+![ER Diagram](https://drive.google.com/file/d/1GwK4gCAELum_tOW3OmQWBiRA7jP2CXAO/view?usp=drive_link)
 
 # ✅ Normalization to 3NF – Airbnb Database Design
 
