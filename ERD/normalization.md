@@ -1,4 +1,4 @@
-![Alt text for the image](https://drive.google.com/uc?export=view&id=1y5uB74qbmxXpbs160a4kR3Wo7RURkFd7)
+![Alt text for the image](https://drive.google.com/file/d/1GwK4gCAELum_tOW3OmQWBiRA7jP2CXAO/view?usp=drive_link)
 
 --
 
