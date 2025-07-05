@@ -1,6 +1,6 @@
 -- performance.sql
 
--- Initial detailed query with full JOINs
+-- Initial detailed query with full JOINs and filtering
 SELECT 
     b.id AS booking_id,
     b.booking_date,
@@ -22,11 +22,14 @@ FROM
     bookings b
 JOIN users u ON b.user_id = u.id
 JOIN properties p ON b.property_id = p.id
-JOIN payments pay ON b.id = pay.booking_id;
+JOIN payments pay ON b.id = pay.booking_id
+WHERE 
+    b.booking_date >= '2024-01-01'
+    AND pay.amount > 100;
 
 
-
--- EXPLAIN ANALYZE
+-- EXPLAIN ANALYZE: Query with filters to evaluate index effectiveness
+EXPLAIN ANALYZE
 SELECT 
     b.id AS booking_id,
     b.booking_date,
@@ -44,4 +47,7 @@ FROM
     bookings b
 JOIN users u ON b.user_id = u.id
 JOIN properties p ON b.property_id = p.id
-JOIN payments pay ON b.id = pay.booking_id;
+JOIN payments pay ON b.id = pay.booking_id
+WHERE 
+    b.booking_date >= '2024-01-01'
+    AND pay.amount > 100;
